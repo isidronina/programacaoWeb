@@ -1,48 +1,73 @@
-
 body {
     font-family: Arial;
 }
 
 table {
     width: 700px;
+    table-layout: fixed;
     border: 5px solid green;
     border-collapse: collapse;
+    background: linear-gradient(to bottom, white,#99f399);
+}
+h2{
+    width: 700px;
+    margin: 0;
+    padding: 10px 0;
+    background-color: yellow;
+    color: green;
+    text-align: center;
+    box-sizing: border-box;
 }
 
-th {
+th,td{
+    width: 33.33%;
+}
+
+th{
     padding: 10px;
     border: 2px solid green;
+    background-color: transparent;
 }
-
-td {
+td{
     padding: 8px;
     border: 2px solid green;
+    background-color: transparent;
+        
 }
 
-th:first-child {
-    background-color: yellow;
-    color: green;
-    font-size: 25px;
+th:first-child{
+    background-color: transparent;
+    
+    padding-top: 15px;
 }
-
-td:first-child {
+td:first-child{
+    font-size: 20px;
     text-align: left;
+    vertical-align: middle;
+    padding-top: 15px;
+    
 }
 
-td {
+td:nth-child(2){
+    font-size: 20px;
+    text-align: center;
+    vertical-align: middle;
+}
+td:last-child(2){
     text-align: center;
 }
-
-tr {
-    background-color: #d8f0d8;
+td:last-child{
+    font-size: 20px;
+    text-align: right;
 }
 
-tr:hover {
+td:first-child img{
+    float: right;
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+tr:hover{
     color: green;
     background-color: yellow;
-}
-
-img {
-    vertical-align: middle;
-    margin-left: 10px;
 }
