@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>atividade Web</title>
+    <style>
+    [title]{
+        border: 4px solid red;
+    }
+    [title='Página 3']{
+        color: green;
+    }
+    [title~='K19']{
+        padding: 10px;
+        background: yellow;
+    }
+    [title^='Link']{
+        margin-right: 30px;
+    }
+    [href$='link']{
+        outline: 4px solid blue;
+    }
+    [src*='large']{
+        border: 4px solid green;
+    }
+    [href|='#link']{
+        font-size: 30px;
+    }
+    img{
+      width:150px;
+      height:auto;
+    }
+    </style>
+</head>
+<body>
+
+    <p>4)</p>
+    <h1 title="Página 3">Minha Página</h1>
+    <p title="K19">exemplo para essa atividade</p>
+    <a title="Link do Google" href="https://www.google.com">google</a>
+    <br />
+    <a href="pagina-link">outas páginas</a><br />
+    <a href="#link">link da pagina</a><br/>
+    <img src="1Poderoso.webp" alt="Imagem exemplo" />
+</body>
+</html>
